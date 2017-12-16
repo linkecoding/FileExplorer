@@ -13,5 +13,5 @@
 5. 下拉刷新数据
 
 ### 应用截图
-![](img/1.png)
-![](img/2.png)
+<img src="img/1.png" width="50%" height="50%">
+<img src="img/2.png" width="50%" height="50%">
