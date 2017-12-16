@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FileExplorer</string>
+    <string name="str_search">搜索</string>
+    <string name="str_new_folder">新建文件夹</string>
+    <string name="str_copy">复制</string>
+    <string name="str_sort">排序</string>
+    <string name="str_according_to_file_size">按文件大小排序</string>
+    <string name="str_according_to_file_time">按文件时间排序</string>
+    <string name="str_according_to_file_name">按文件名称排序</string>
+    <string name="str_folder">文件夹</string>
+    <string name="str_category">分类</string>
+    <string name="str_phone">手机</string>
+    <string name="str_no_program_can_open_the_file">没有程序可以打开该文件</string>
+    <string name="str_again_click_exit">再按一次退出程序</string>
+    <string name="str_show_hide_file">显示隐藏文件</string>
+    <string name="str_no_file">没有文件</string>
+    <string name="str_sort_name">名称</string>
+    <string name="str_sort_desc">从大到小</string>
+    <string name="str_sort_asc">从小到大</string>
+    <string name="str_sort_type">类型</string>
+    <string name="str_sort_modify_date">修改日期</string>
+    <string name="str_common_app">常用应用</string>
+    <string name="menu_action_sort">排序</string>
+    <string name="menu_action_new_folder">新建文件夹</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_new_create">新建</string>
+    <string name="str_folder_create_success">文件夹创建成功</string>
+    <string name="str_folder_create_failed">文件夹创建失败</string>
+    <string name="str_folder_exist">文件夹已经存在</string>
+    <string name="str_not_show_hidden_file">不显示隐藏文件</string>
+    <string name="str_scanning">正在扫描</string>
+</resources>

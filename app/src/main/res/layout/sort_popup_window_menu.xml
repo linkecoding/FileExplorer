@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_operation_popupwindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/id_sort_menu_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/id_close_sort_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_close_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_below="@id/id_close_sort_menu"
+        android:divider="@drawable/ic_divider_line_gray"
+        android:showDividers="beginning|middle"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/id_sort_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_sort_name"/>
+        <TextView
+            android:id="@+id/id_sort_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_sort_desc"/>
+        <TextView
+            android:id="@+id/id_sort_asc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_sort_asc"/>
+        <TextView
+            android:id="@+id/id_sort_midify_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_sort_modify_date"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

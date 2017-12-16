@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_file_list_pulltorefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/fragment_file_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_52"
+        android:background="@color/colorWhite">
+    <TextView
+        android:id="@+id/id_start_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_32"
+        android:layout_margin="@dimen/len_10"
+        android:drawableLeft="@drawable/ic_search_24dp"
+        android:drawableStart="@drawable/ic_search_24dp"
+        android:background="@color/colorLightGray"
+        android:paddingLeft="@dimen/len_10"
+        android:paddingRight="@dimen/len_10"
+        android:paddingStart="@dimen/len_10"
+        android:drawablePadding="@dimen/len_10"
+        android:gravity="start|center"
+        android:text="@string/str_search"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_48"
+        android:background="@color/colorLightGray">
+        <TextView
+            android:id="@+id/id_now_file_path_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_40"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/len_10"
+            android:paddingEnd="@dimen/len_10"
+            android:paddingLeft="@dimen/len_10"
+            android:paddingStart="@dimen/len_10"
+            android:background="@color/colorWhite"
+            tools:text="moer"
+            android:textSize="@dimen/font_14" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLightGray"
+        android:layout_marginLeft="@dimen/len_4"
+        android:layout_marginRight="@dimen/len_4" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <ListView
+        android:id="@+id/id_file_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorLightGray"
+        android:dividerHeight="1dp"/>
+          <TextView
+              android:id="@+id/id_empty_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/len_10"
+              android:drawablePadding="@dimen/len_10"
+              android:drawableTop="@drawable/ic_folder"
+              android:layout_gravity="center"
+              android:text="@string/str_no_file"/>
+    </FrameLayout>
+</LinearLayout>
+</com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>

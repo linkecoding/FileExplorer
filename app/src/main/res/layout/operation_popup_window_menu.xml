@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_operation_popupwindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/id_menu_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/id_close_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_close_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_below="@id/id_close_menu"
+        android:divider="@drawable/ic_divider_line_gray"
+        android:showDividers="beginning|middle"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/id_action_sort"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_sort"/>
+        <TextView
+            android:id="@+id/id_action_new_folder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_new_folder"/>
+        <TextView
+            android:id="@+id/id_action_show_hide_folder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:textSize="14sp"
+            android:text="@string/str_show_hide_file"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

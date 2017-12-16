@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_file_category_pulltorefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:id="@+id/fragment_file_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite">
+        <TextView
+            android:id="@+id/id_start_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_32"
+            android:layout_margin="@dimen/len_10"
+            android:drawableLeft="@drawable/ic_search_24dp"
+            android:drawableStart="@drawable/ic_search_24dp"
+            android:background="@color/colorLightGray"
+            android:paddingLeft="@dimen/len_10"
+            android:paddingRight="@dimen/len_10"
+            android:paddingStart="@dimen/len_10"
+            android:drawablePadding="@dimen/len_10"
+            android:gravity="start|center"
+            android:text="@string/str_search"/>
+    </FrameLayout>
+    <GridView
+        android:id="@+id/id_category_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/len_10"
+        android:horizontalSpacing="@dimen/len_16"
+        android:verticalSpacing="@dimen/len_16"
+        android:padding="@dimen/len_16"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:background="@color/colorWhite"
+        android:numColumns="4" />
+
+    <FrameLayout
+        android:id="@+id/id_loading_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <net.qiujuer.genius.ui.widget.Loading
+            android:layout_width="@dimen/len_40"
+            android:layout_height="@dimen/len_40"
+            android:layout_gravity="center"
+            app:gBackgroundLineSize="@dimen/len_2"
+            app:gAutoRun="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_scanning"
+            android:layout_marginTop="@dimen/len_40"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>
+</com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
